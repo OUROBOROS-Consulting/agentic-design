@@ -5,7 +5,7 @@ Accessible, elegant design system for OUROBOROS Consulting. Dark, editorial aest
 ## Installation
 
 ```bash
-npm install @OUROBOROS-Consulting/agentic-design
+npm install @ouroboros-consulting/agentic-design
 ```
 
 ## Usage
@@ -56,7 +56,7 @@ Three levels apply scallop texture + background:
 ## Architecture
 
 | File | Purpose |
-|------|---------|
+| --- | --- |
 | `_base.scss` | Tokens, reset, mixins, body texture, scallop patterns |
 | `_typography.scss` | Prose typographic scale (Lora serif) |
 | `_buttons.scss` | `.btn`, `.btn--ghost` styles |

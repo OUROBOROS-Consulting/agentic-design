@@ -1,5 +1,5 @@
 {
-  "name": "@OUROBOROS-Consulting/agentic-design",
+  "name": "@ouroboros-consulting/agentic-design",
   "version": "1.0.0",
   "description": "Accessible, elegant design system for OUROBOROS Consulting",
   "main": "scss/index.scss",

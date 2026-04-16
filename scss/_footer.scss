@@ -9,11 +9,11 @@ footer {
   @include scallop-elevated;
   background-color: rgba(20, 20, 20, 0.92);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  border: 2px solid var(--gold-border);
 }
 
 .footer-copy {
-  font-size: 0.78rem;
+  font-size: 1rem;
   color: var(--subdued);
 }
 
@@ -27,7 +27,7 @@ footer {
   }
 
   .card--formula__interior {
-    padding: 0.8rem 1rem;
+    padding: 1rem 1rem;
   }
 
   a {

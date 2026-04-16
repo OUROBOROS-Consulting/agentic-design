@@ -197,6 +197,9 @@ nav {
   &:nth-child(8) { animation-delay: 0.35s; }
 }
 
+// ── Accordion button (mobile only, hidden on desktop) ────────────────────────
+.nav-accordion-btn { display: none; }
+
 // ── Hamburger toggle (hidden on desktop) ──────────────────────────────────────
 .nav-toggle {
   display:        none;
@@ -273,18 +276,60 @@ nav {
     }
   }
 
-  // Mobile dropdowns: always show children (no hover required)
+  // Mobile dropdowns: hidden by default, expand on .open
   .nav-dropdown-menu {
     position:       static;
-    opacity:        1;
-    pointer-events: auto;
+    opacity:        0;
+    max-height:     0;
+    overflow:       hidden;
+    pointer-events: none;
     transform:      none;
     padding-left:   1rem;
+    transition:     opacity 0.2s, max-height 0.28s ease;
+  }
+
+  .nav-dropdown.open .nav-dropdown-menu {
+    opacity:        1;
+    max-height:     600px;
+    pointer-events: auto;
   }
 
   // Stagger animation not needed on mobile
   .nav-dropdown-menu .card--formula {
     opacity: 1;
     animation: none !important;
+  }
+
+  // Accordion chevron button (mobile only)
+  .nav-accordion-btn {
+    display:          flex;
+    align-items:      center;
+    justify-content:  center;
+    background:       transparent;
+    border:           none;
+    cursor:           pointer;
+    padding:          0.25rem 0.5rem;
+    color:            var(--muted);
+    flex-shrink:      0;
+    transition:       color 0.2s, transform 0.2s;
+
+    i {
+      font-size:  0.75rem;
+      transition: transform 0.25s ease;
+    }
+
+    &:hover { color: var(--gold); }
+  }
+
+  .nav-dropdown.open .nav-accordion-btn {
+    color: var(--gold-border);
+    i { transform: rotate(180deg); }
+  }
+
+  // Parent row: link + chevron side by side
+  .card--formula__interior {
+    display:         flex;
+    align-items:     center;
+    justify-content: space-between;
   }
 }

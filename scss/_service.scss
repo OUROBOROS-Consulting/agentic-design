@@ -4,7 +4,9 @@
   border-bottom: 2px solid var(--border);
   position: relative;
   @include elevation-standard;
-  background-color: midnightblue;
+  background-color: #1e213e;
+  background-image: none;
+  box-shadow: none;
   background-size: 300px 300px;
   background-position: 0 0;
 

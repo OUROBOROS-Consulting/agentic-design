@@ -369,11 +369,3 @@ $-inner: calc(#{$-arc} - #{$-border});
   }
 }
 
-// In _cards.scss or your CV stylesheet
-.cv-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 3px; // keep this small so cards feel grouped
-  margin-bottom: 4rem; // ← space after each section's card stack
-  border-left: 1px solid var(--border);
-}

@@ -121,8 +121,9 @@ nav {
   transition: color 0.3s;
   padding: 0;
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.35rem;
 
   i {
     font-size: 0.95rem;
